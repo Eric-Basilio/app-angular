@@ -1,0 +1,21 @@
+<h1>Aplicação</h1>
+<app-header></app-header>
+
+<router-outlet></router-outlet>
+
+<div *ngIf="clientePremium; else naopremium">
+<p>Você é um cliente premium, tem acesso a informações privilegiadas </p>
+</div>
+
+<ng-template #naopremium>
+    
+  <br />  Não é um cliente premium
+</ng-template>
+
+<ul *ngFor="let valor of valores">
+<li>{{valor.id}} - {{valor.nome}} - {{valor.descricao}}</li>
+</ul>
+
+<label>Digite um nome</label>
+<input [(ngModel)]="nome">
+<button (click)="adicionar()">Adicionar Intem</button>

@@ -1,6 +1,6 @@
 <h1>Aplicação</h1>
-<app-header></app-header>
-
+<app-header></app-header> <br />
+<a [routerLink]="['pai']"> Ir para Componente Pai</a> <br />
 <router-outlet></router-outlet>
 
 <div *ngIf="clientePremium; else naopremium">
@@ -23,3 +23,5 @@
 <p>Data: {{umaData | date:'long'}}</p>
 <p>Currenry: {{umDinheiro |currency: 'BRL'}}</p>
 <p>Customizado Upercase: {{nome | appUppercase}}</p>
+
+<button (click)="sayHello()">Dizer Olá</button>

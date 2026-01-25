@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ClientService } from './services/client.service';
 
 @Component({
   selector: 'app-root',
@@ -28,5 +29,11 @@ export class AppComponent {
 
   umaData = new Date();
   umDinheiro = 10.50;
+
+  constructor(private clientService: ClientService){};
+
+  sayHello(){
+    alert(this.clientService.sayHello());
+  }
 
 }

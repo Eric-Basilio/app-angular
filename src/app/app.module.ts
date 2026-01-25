@@ -13,7 +13,7 @@ import { ClientListPage } from './pages/client.list.page.component';
   declarations: [
     AppComponent,
     BindingPageComponent,
-    ClientListPage
+    ClientListPage,
   ],
   imports: [
     BrowserModule,

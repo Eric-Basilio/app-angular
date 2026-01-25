@@ -5,8 +5,8 @@ import { Component } from "@angular/core";
         selector: "app-binding-page",
         template: `
         <h1> Imagem do Angular </h1>
-        <img [src]= "imagem" [style]="{width: width}"/>
-        <div class="alert" [class]="{sucess: sucesso}">
+        <img [src]= "imagem" [style]="{width: width, height: height}"/>
+        <div class="alert" [class]="sucesso" [style.background-color]="background">
             ALERTA
         </div>
         <button (click)="enviarDados()">Enviar Dados</button>
@@ -30,9 +30,12 @@ export class BindingPageComponent {
 
 imagem = "https://angular.io/assets/images/logos/angular/angular.svg";
 width = "300px";
+height = "200px";
 sucesso = true;
+background = "blue";
 
 enviarDados() {
-    this.sucesso = !this.sucesso;
+    //this.sucesso = !this.sucesso;
+    this.background = "red";
 };
 }

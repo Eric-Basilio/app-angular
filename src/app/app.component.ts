@@ -9,7 +9,7 @@ export class AppComponent {
   title = 'app-angular';
   descricao1 = 'Descrição';
 
-  nome = '';
+  nome = 'João Alberto';
 
   valores = [{
     descricao: 'teste',
@@ -25,5 +25,8 @@ export class AppComponent {
   adicionar(){
     this.valores.push({descricao: 'adicionado', nome: this.nome, id: 3})
   };
+
+  umaData = new Date();
+  umDinheiro = 10.50;
 
 }

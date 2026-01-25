@@ -15,6 +15,7 @@ import { Filho2PageComponent } from './pages/filho2-page.component';
 import { PaiPageComponent } from './pages/pai.component';
 import { LoginPageComponent } from './pages/login-page.component';
 import { ClientDetalhePageComponent } from './pages/client-detalhe-page.component';
+import { RXJSPageComponent } from './pages/rxjs-page';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ClientDetalhePageComponent } from './pages/client-detalhe-page.componen
     PaiPageComponent,
     ClientListPage,
     LoginPageComponent,
-    ClientDetalhePageComponent
+    ClientDetalhePageComponent,
+    RXJSPageComponent
   ],
   imports: [
     BrowserModule,

@@ -14,6 +14,7 @@ import { Filho1PageComponent } from './pages/filho1-page.component';
 import { Filho2PageComponent } from './pages/filho2-page.component';
 import { PaiPageComponent } from './pages/pai.component';
 import { LoginPageComponent } from './pages/login-page.component';
+import { ClientDetalhePageComponent } from './pages/client-detalhe-page.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { LoginPageComponent } from './pages/login-page.component';
     Filho2PageComponent,
     PaiPageComponent,
     ClientListPage,
-    LoginPageComponent
+    LoginPageComponent,
+    ClientDetalhePageComponent
   ],
   imports: [
     BrowserModule,

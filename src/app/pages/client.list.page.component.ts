@@ -6,6 +6,11 @@ import { Component } from "@angular/core";
 })
 
 export class ClientListPage {
-clientePremium = true
-clients = ['Cliente 1', 'Cliente 2', 'Cliente 3']
+    clientePremium = true
+    clients = [ 
+        { id: 1, nome: 'Cliente 1' },
+        { id: 2, nome: 'Cliente 2' },
+        { id: 3, nome: 'Cliente 3' }
+    ];
+ 
 }

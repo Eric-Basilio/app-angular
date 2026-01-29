@@ -18,6 +18,7 @@ import { ClientDetalhePageComponent } from './pages/client-detalhe-page.componen
 import { RXJSPageComponent } from './pages/rxjs-page';
 import { ListaPessoasPage } from './pages/lista-pessoas-page.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { UserPageComponent } from './pages/user-page.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     LoginPageComponent,
     ClientDetalhePageComponent,
     RXJSPageComponent,
-    ListaPessoasPage
+    ListaPessoasPage,
+    UserPageComponent
   ],
   imports: [
     BrowserModule,

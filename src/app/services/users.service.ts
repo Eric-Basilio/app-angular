@@ -27,7 +27,7 @@ postUser(user: User){
     })
 }
 
-deleteUser(id:number){
+deleteUser(id: number){
     this.http.delete(`${URL}/${id}`)
     .subscribe(response =>{
         console.log('Deletado')
